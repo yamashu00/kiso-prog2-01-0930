@@ -6,7 +6,9 @@
 
 int main(void) {
     unsigned int arr[5] = {10, 20, 30, 40, 50};
-    for (unsigned int i = 4; i >= 0; i--) {
+    for (unsigned int i = 4; i <= 50; i--) {
         printf("%d\n", arr[i]);
+
+        }
     }
-}
+    //0まで行ったらバカでかい数字に戻ってしまうから正しく表示されない。

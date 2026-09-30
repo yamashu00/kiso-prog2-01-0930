@@ -12,3 +12,5 @@ int main(void) {
     b++;
     printf("unsigned char: %u\n", b); // → 128になる！
 }
+//signedのときの範囲は-128~127までで、128はプラスでは表示されないから
+//unsignedはマイナスを絶対に表示しないから128になる
