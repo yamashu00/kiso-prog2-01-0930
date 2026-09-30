@@ -5,8 +5,8 @@
 #include <stdio.h>
 
 int main(void) {
-    unsigned int arr[5] = {10, 20, 30, 40, 50};
-    for (unsigned int i = 4; i >= 0; i--) {
+    unsigned int arr[5] = {10, 20, 30, 40, 50}; 
+    for (signed int i = 4; i >= 0; i--) {    //マイナスにならないためディクリメントし続けられる
         printf("%d\n", arr[i]);
     }
 }
