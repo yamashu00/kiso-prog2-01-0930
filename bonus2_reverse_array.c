@@ -6,7 +6,12 @@
 
 int main(void) {
     unsigned int arr[5] = {10, 20, 30, 40, 50};
-    for (unsigned int i = 4; i >= 0; i--) {
-        printf("%d\n", arr[i]);
+
+    // unsigned intは0未満にならないため、0から1を引くと大きな正の値になり、
+    // 無限ループして配列の範囲外を参照してしまう。そのためiをintにする。
+    for (int i = 4; i >= 0; i--) {
+        printf("%u\n", arr[i]);
     }
+
+    return 0;
 }
