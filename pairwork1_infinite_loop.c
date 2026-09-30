@@ -5,7 +5,7 @@
 
 int main(void) {
     unsigned int i;
-    for (i = 10; i >= 0; i--) {
+    for (i = 10; 11 > i; i--) {
         printf("%u\n", i);
     }
 }
