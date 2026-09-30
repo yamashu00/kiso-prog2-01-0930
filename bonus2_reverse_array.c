@@ -6,7 +6,8 @@
 
 int main(void) {
     unsigned int arr[5] = {10, 20, 30, 40, 50};
-    for (unsigned int i = 4; i >= 0; i--) {
-        printf("%d\n", arr[i]);
+    
+    for (unsigned int i = 4; i < 5; i--) {
+        printf("%u\n", arr[i]);
     }
-}
+};
