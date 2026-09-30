@@ -6,6 +6,10 @@
 int main(void) {
     unsigned int i;
     for (i = 10; i >= 0; i--) {
+        if (i == 0){
+            printf("%u\n", i);
+            break;
+        }
         printf("%u\n", i);
     }
 }

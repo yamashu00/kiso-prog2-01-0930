@@ -4,8 +4,16 @@
 #include <stdio.h>
 
 int main(void) {
-    unsigned int i;
-    for (i = 10; i >= 0; i--) {
+    signed int i;
+    if (i == 0){
+
         printf("%u\n", i);
+    }else {
+         for (i = 10; i >= 0; i--) {
+        printf("%u\n", i);
+         
+    } 
     }
+
+     return 0;
 }
