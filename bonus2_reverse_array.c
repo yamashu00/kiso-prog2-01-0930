@@ -5,8 +5,10 @@
 #include <stdio.h>
 
 int main(void) {
-    unsigned int arr[5] = {10, 20, 30, 40, 50};
-    for (unsigned int i = 4; i >= 0; i--) {
+    signed int arr[5] = {10, 20, 30, 40, 50};
+    for (signed int i = 4; i >= 0; i--) {
         printf("%d\n", arr[i]);
     }
 }
+
+/*i >= 0ってことは、0の時も-1されちゃう。0−１=-1で、unsignedは符号があるとバグっちゃう。今回はintでもできると思う。。*/
