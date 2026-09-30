@@ -1,12 +1,13 @@
 // 発展課題②（早く終わった人向け）
 // 配列を末尾から先頭まで出力したいが、このコードは動かない（無限ループ＋配列外参照）。
 // なぜダメか説明し、正しく直せ。
+// unsignedなので0未満にはなれないのにコードが i >= 0 のように書かれていることが原因。
 
 #include <stdio.h>
 
 int main(void) {
     unsigned int arr[5] = {10, 20, 30, 40, 50};
-    for (unsigned int i = 4; i >= 0; i--) {
-        printf("%d\n", arr[i]);
+    for (unsigned int i = 5; i > 0; i--) {
+        printf("%d\n", arr[i - 1]);
     }
 }
