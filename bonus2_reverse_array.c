@@ -6,7 +6,13 @@
 
 int main(void) {
     unsigned int arr[5] = {10, 20, 30, 40, 50};
-    for (unsigned int i = 4; i >= 0; i--) {
+    for (unsigned int i = 4; i <= 50; i--) {
         printf("%d\n", arr[i]);
     }
 }
+
+/*
+なぜダメなのか
+i が unsigned int のため、0から1を引いても-1にならず、大きな値になってしまい、
+配列の範囲外を参照してしまう。
+*/
