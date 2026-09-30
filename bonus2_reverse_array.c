@@ -8,5 +8,10 @@ int main(void) {
     unsigned int arr[5] = {10, 20, 30, 40, 50};
     for (unsigned int i = 4; i >= 0; i--) {
         printf("%d\n", arr[i]);
+        if (i == 0)
+        {
+            break;
+        }
+        
     }
 }
