@@ -6,7 +6,9 @@
 
 int main(void) {
     unsigned int arr[5] = {10, 20, 30, 40, 50};
-    for (unsigned int i = 4; i >= 0; i--) {
-        printf("%d\n", arr[i]);
+    for (unsigned int i = 5; i > 0; i--) {
+        printf("%d\n", arr[i-1]);
     }
 }
+
+//i<=0だと無限ループが発生する。しかしi<0だと全てを出力できない。i=5に変更してarr[i-1]とすることで5回ぴったりで出力できる。
