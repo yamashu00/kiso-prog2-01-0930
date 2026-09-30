@@ -2,11 +2,12 @@
 // 配列を末尾から先頭まで出力したいが、このコードは動かない（無限ループ＋配列外参照）。
 // なぜダメか説明し、正しく直せ。
 
+//i が unsigned int なので0より小さくならない、i = 0 のあと i-- すると -1 ではなく巨大な値になる。そのため無限ループになり、配列外参照が起こる。
 #include <stdio.h>
 
 int main(void) {
     unsigned int arr[5] = {10, 20, 30, 40, 50};
-    for (unsigned int i = 4; i >= 0; i--) {
+    for (int i = 4; i >= 0; i--) {
         printf("%d\n", arr[i]);
     }
 }
