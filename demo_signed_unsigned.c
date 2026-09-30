@@ -11,4 +11,6 @@ int main(void) {
     unsigned char b = 127;
     b++;
     printf("unsigned char: %u\n", b); // → 128になる！
+
+    return 0;
 }

@@ -4,8 +4,10 @@
 #include <stdio.h>
 
 int main(void) {
-    unsigned int i;
+    signed int i;
     for (i = 10; i >= 0; i--) {
         printf("%u\n", i);
     }
+
+    return 0;
 }
