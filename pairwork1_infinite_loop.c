@@ -2,10 +2,14 @@
 // ヒント: unsigned int は 0 未満になれない
 
 #include <stdio.h>
+#include <unistd.h>
 
-int main(void) {
+int main(void)
+{
     unsigned int i;
-    for (i = 10; i >= 0; i--) {
+    for (i = 10; i >= 0; i--)
+    {
         printf("%u\n", i);
+        sleep(1);
     }
 }
